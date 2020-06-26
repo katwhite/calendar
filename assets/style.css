@@ -1,0 +1,140 @@
+body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #000;
+    background-color: #fff;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+    color:red;
+    text-decoration: underline;
+}
+
+p {
+    margin: 5px 0 10px;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0 15px;
+}
+
+.page-header {
+    min-height: 100px;
+    padding: 15px;
+}
+
+.page-footer {
+    min-height:100px;
+    background:#ddd;
+    padding:15px;
+}
+
+.page-header_container,
+.page-content_container,
+.page-footer_container {
+    max-width:1200px;
+    margin:0 auto;
+    padding:15px;
+}
+
+.add-task-form_heading,
+.task-list_heading {
+    font-weight: 500;
+    font-size:1.5em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: block;
+    margin: 0 0 15px;
+    
+}
+
+.form-group form-group_label {
+    display: block;
+    margin: 0 0 5px;
+}
+
+.form-group form-group_control {
+    display: block;
+    margin: 0 0 5px;
+    width: 100%;
+}
+
+input[type="text"].form-group_control,
+input[type="date"].form-group_control,
+input[type="datetime"].form-group_control,
+select.form-group_control {
+    height: 26px;
+}
+
+.task-list_table .table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.task-list_table .table td,
+.task-list_table .table th {
+    border: solid 1px #777;
+    padding: 3px 5px;
+    text-align: left;
+}
+
+.task-list_table .table th {
+    background-color: #eee;
+}
+
+.task-list_toolbar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto auto 1fr;
+    gap: 10px;
+}
+
+.task-list_toolbar .tool-item {
+}
+
+.tool-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-workspace {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.failed {
+    color:red;
+}
